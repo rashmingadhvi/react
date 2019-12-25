@@ -12,9 +12,14 @@ axios.interceptors.response.use(null,error=>{
     return Promise.reject(error);
 });
 
+function setAuthToken(authToken){
+    axios.defaults.headers["x-auth-token"] = authToken;
+}
+
 export default {
     get:axios.get,
     put:axios.put,
     post:axios.post,
-    delete:axios.delete
+    delete:axios.delete,
+    setAuthToken:setAuthToken
 }

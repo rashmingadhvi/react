@@ -31,10 +31,15 @@ class Movies extends Component {
       name: "",
       label: "Action",
       component: item => (
+          this.props.currentUser.isAdmin ?
         <i
-          className="fa fa-cut "
+          className="fa fa-cut"
           onClick={() => this.props.removeLineItem(item)}
         />
+        :
+              <i
+                  className="fa fa-ban"
+              />
       ),
       sortable: false
     }

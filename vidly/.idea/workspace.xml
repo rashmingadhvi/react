@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ca940af-5230-41f5-b0c0-61434d21a405" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/app1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/logout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/protectedRoute.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/authService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/registerService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AllMovies.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AllMovies.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movies.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movies.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/httpClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/httpClient.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1UOVecE5pU1OaH49XicVQHDfTx6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\RashMin\Projects\React\app1\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\RashMin\Projects\GitHub\react\vidly" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\RashMin\Projects\React\vidly\src\components" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ca940af-5230-41f5-b0c0-61434d21a405" name="Default Changelist" comment="" />
+      <created>1575227724926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575227724926</updated>
+      <workItem from="1575227735756" duration="3588000" />
+      <workItem from="1575421346840" duration="4824000" />
+      <workItem from="1575662461910" duration="11711000" />
+      <workItem from="1575765378202" duration="6791000" />
+      <workItem from="1575828978391" duration="14356000" />
+      <workItem from="1576001920434" duration="11554000" />
+      <workItem from="1576112084253" duration="1009000" />
+      <workItem from="1576197015258" duration="4915000" />
+      <workItem from="1576271701998" duration="4689000" />
+      <workItem from="1576436989507" duration="14894000" />
+      <workItem from="1576546694303" duration="4079000" />
+      <workItem from="1576708196827" duration="9860000" />
+      <workItem from="1576876778389" duration="13774000" />
+      <workItem from="1577033394083" duration="12585000" />
+      <workItem from="1577061554296" duration="436000" />
+      <workItem from="1577062754494" duration="28000" />
+      <workItem from="1577296956567" duration="14771000" />
+    </task>
+    <task id="LOCAL-00001" summary="first code upload">
+      <created>1577061937048</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577061937048</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first code upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="first code upload" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="26" key="#ESLint" timestamp="1577033654844">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="26" key="#ESLint/0.0.1366.738@0.0.1366.738" timestamp="1577033654844" />
+    <state x="442" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577314956471">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="442" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1577314956471" />
+    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577060028026">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1577060028026" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1577061933886">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1577061933886" />
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom" timestamp="1577301408043">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1577301408043" />
+    <state width="1345" height="182" key="GridCell.Tab.0.center" timestamp="1577301408042">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1577301408042" />
+    <state width="1345" height="182" key="GridCell.Tab.0.left" timestamp="1577301408041">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1577301408041" />
+    <state width="1345" height="182" key="GridCell.Tab.0.right" timestamp="1577301408042">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1577301408042" />
+    <state x="181" y="0" key="SettingsEditor" timestamp="1575422250830">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="181" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1575422250830" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1577061942943">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1577061942943" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1576003989244">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1576003989244" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1577315093028">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1577315093028" />
+  </component>
+</project>

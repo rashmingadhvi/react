@@ -1,6 +1,9 @@
 import React from 'react';
 import Joi from 'joi-browser'
 import Form from "./common/form";
+import * as loginsvc from '../services/authService';
+import {toast} from "react-toastify";
+
 class Login extends Form {
 
     state = {
@@ -19,7 +22,7 @@ class Login extends Form {
                 <h1>Login</h1>
                 <form onSubmit={this.handleSubmit}>
                     {this.renderInput("userName","UserName")}
-                    {this.renderInput("password","Password","password")}
+                    {this.renderInput("password","Password",null,"password")}
                     {this.renderSubmitBun("Login")}
                 </form>
             </div>
@@ -27,9 +30,18 @@ class Login extends Form {
         );
     };
 
-    implSubmit(){
-        //handle submit, send to server
-        console.log("Logged in");
+    async implSubmit(){
+        try{
+            await loginsvc.login(
+                {email:this.state.formData.userName
+                    , password:this.state.formData.password
+                });
+            window.location="/";
+        }catch (e) {
+            if(e.response && e.response.status===400){
+                toast.error(e.response.data);
+            }
+        }
     };
 
 

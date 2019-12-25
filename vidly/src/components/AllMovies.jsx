@@ -21,7 +21,8 @@ class AllMovies extends Component {
   };
     
   render() {
-      const {pageSize, movies:allMovies, genres, currentPage, selectedGenre, sortType, searchText} = this.state;
+      const {pageSize, movies:allMovies, genres, currentPage,
+        selectedGenre, sortType, searchText} = this.state;
 
       const filteredData = this.filterData(allMovies, selectedGenre, searchText);
 
@@ -53,6 +54,7 @@ class AllMovies extends Component {
                   onSearch={this.searchMovies}
                   searchText={searchText}
                   totalItems={filteredData.length}
+                  currentUser={this.props.currentUser}
                 />
                 <Pagination
                   totalItems={filteredData.length}
