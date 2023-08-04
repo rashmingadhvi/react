@@ -8,9 +8,8 @@ import {
 } from "../redux/slices/empSlice";
 const EmpForm = () => {
   const showForm = useSelector((state: RootState) => !state.empsvc.hideForm);
-  const isContractor = useSelector(
-    (state: RootState) => !state.empsvc.empFormData.isContractor
-  );
+  const validated = useSelector((state: RootState) => state.empsvc.validForm);
+
   const dispatch = useDispatch();
   return (
     <>
@@ -19,11 +18,12 @@ const EmpForm = () => {
           <Modal.Title>Add Employee</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <Form noValidate validated={validated}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>First Name</Form.Label>
               <Form.Control
                 type="input"
+                required
                 placeholder="First Name"
                 autoFocus
                 onChange={(e) => {
@@ -41,6 +41,7 @@ const EmpForm = () => {
               <Form.Label>Last Name</Form.Label>
               <Form.Control
                 type="input"
+                required
                 placeholder="Last Name"
                 onChange={(e) => {
                   e.preventDefault();
@@ -57,6 +58,7 @@ const EmpForm = () => {
               <Form.Label>Salary</Form.Label>
               <Form.Control
                 type="number"
+                defaultValue={0.0}
                 placeholder="Salary"
                 onChange={(e) => {
                   e.preventDefault();
@@ -100,8 +102,6 @@ const EmpForm = () => {
                     })
                   );
                 }}
-
-              
               >
                 <option value="true">True</option>
                 <option value="false">False</option>

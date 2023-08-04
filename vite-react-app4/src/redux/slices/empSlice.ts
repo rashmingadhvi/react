@@ -1,5 +1,7 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import EmployeeSvc, { IEmployee } from "../../service/EmployeeSvc";
+import {Form} from "react-bootstrap";
+import { isFormElement } from "react-router-dom/dist/dom";
 
 export interface IEmpOperationState {
   empId: number;
@@ -7,6 +9,7 @@ export interface IEmpOperationState {
   message: string;
   hideForm: boolean;
   empFormData: IEmployee;
+  validForm: boolean;
 }
 
 
@@ -16,6 +19,7 @@ const initialState: IEmpOperationState = {
     message: "NA",
     hideForm: true,
     empFormData: {} as IEmployee,
+    validForm: false,
   };
 
 
@@ -29,7 +33,7 @@ const initialState: IEmpOperationState = {
                 state.empData = [{
                     "empId":1,
                     "fName":"rmk1",
-                    "lName":"gadhavi",
+                    "lName":"gadhvi",
                     "salary":11.67,
                     "grade": "e3",
                     "isContractor": true
@@ -38,6 +42,7 @@ const initialState: IEmpOperationState = {
             hideEmpForm: (state, action: PayloadAction<boolean>) =>{
                 
                  state.hideForm = action.payload;
+                 state.empFormData = {} as IEmployee;
             },
             saveEmpFormData:(state, action:PayloadAction<{type:string,value:string}>) =>{
                 switch(action.payload.type){
@@ -64,11 +69,27 @@ const initialState: IEmpOperationState = {
                 
             },
             saveEmp:(state) =>{
-                console.log(state.empFormData.isContractor);
+                
                 state.empFormData.isContractor === undefined ? state.empFormData.isContractor = true: false;
+              
+              
+              let valid = true;
+              if(state.empFormData.fName == '' || state.empFormData.fName == undefined){
+                    valid = false;
+              }
+              if(state.empFormData.fName == '' || state.empFormData.fName == undefined){
+                valid = false;
+              }
+              if(valid){
                 EmployeeSvc.addEmp(state.empFormData);
                 state.empData = [];
                 state.hideForm = true;
+                state.validForm =true;
+              }else{
+                state.hideForm = false;
+                state.validForm = false;
+              }
+                
             }
         }
     }
