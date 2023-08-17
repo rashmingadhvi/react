@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
-import CartoonSvc, { ICartoon } from "../service/CartoonSvc";
+import { SetStateAction, useEffect, useState } from "react";
+import { ICartoon } from "../service/CartoonSvc";
 import { Container, Stack, Image } from "react-bootstrap";
 import AppImage from "./common/AppImage";
+import { useDeps } from "./common/ServiceProvider";
 
 const DashBoard = () => {
   const [data, setData] = useState<ICartoon[]>([]);
+  const { cartoonSvc } = useDeps();
+
   useEffect(() => {
-    CartoonSvc().then((d) => setData(d));
-  }, []);
+    cartoonSvc().then((d: SetStateAction<ICartoon[]>) => setData(d));
+  }, [cartoonSvc]);
   return (
     <>
       <h1>This is dashboard of Cartoons: {data.length}</h1>

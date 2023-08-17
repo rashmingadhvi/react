@@ -1,28 +1,30 @@
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { Button, ListGroup, Tab, Table, Tabs } from "react-bootstrap";
 import CartoonSvc, { ICartoon } from "../service/CartoonSvc";
 import AppImage from "./common/AppImage";
-import EmployeeSvc, { IEmployee } from "../service/EmployeeSvc";
+import { IEmployee } from "../service/EmployeeSvc";
 import { useDispatch, useSelector } from "react-redux";
 import { delEmp, hideEmpForm } from "../redux/slices/empSlice";
 import { RootState } from "../redux/store";
 import EmpForm from "../forms/EmpForm";
+import { useDeps } from "./common/ServiceProvider";
 
 const GridData = () => {
   const [data, setData] = useState<ICartoon[]>([]);
   const [empData, setEmpData] = useState<IEmployee[]>([]);
   const dispatch = useDispatch();
   const empData2 = useSelector((state: RootState) => state.empsvc.empData);
-
+  const { empSvc } = useDeps();
   useEffect(() => {
     CartoonSvc().then((d) => setData(d));
-    EmployeeSvc.getAll()
-      .then((resp) => {
+    empSvc
+      .getAll()
+      .then((resp: { data: SetStateAction<IEmployee[]> }) => {
         setEmpData(resp.data);
       })
-      .catch((e) => console.error(e))
+      .catch((e: never) => console.error(e))
       .finally(() => console.log("Got Response!"));
-  }, [empData2]);
+  }, [empData2, empSvc]);
 
   return (
     <>
@@ -75,7 +77,8 @@ const GridData = () => {
           <ListGroup>
             {empData.map((d) => (
               <ListGroup.Item key={d.empId}>
-                {d.empId} - {d.fName} {d.lName}  - {d.grade}  {d.salary} {d.isContractor} &nbsp;
+                {d.empId} - {d.fName} {d.lName} - {d.grade} {d.salary}{" "}
+                {d.isContractor} &nbsp;
                 <Button
                   onClick={(e) => {
                     e.preventDefault();

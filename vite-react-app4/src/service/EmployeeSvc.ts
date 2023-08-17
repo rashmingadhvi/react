@@ -1,5 +1,6 @@
 
 import axios, { AxiosResponse } from "axios";
+import { IService } from "./IService";
 
 export interface IEmployee  {
     empId: number,
@@ -18,7 +19,7 @@ const httpClient = axios.create({
   });
 
 
-const EmployeeSvc = {
+const EmployeeSvc: IService = {
 
     getAll():Promise<AxiosResponse<IEmployee[]>> {
         return httpClient.get('/emp/all');
