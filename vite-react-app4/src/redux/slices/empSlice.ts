@@ -1,7 +1,7 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import EmployeeSvc, { IEmployee } from "../../service/EmployeeSvc";
-import {Form} from "react-bootstrap";
-import { isFormElement } from "react-router-dom/dist/dom";
+
+import { AddressDataType } from "../../comp/interfaces/AddressDataType";
 
 export interface IEmpOperationState {
   empId: number;
@@ -36,7 +36,9 @@ const initialState: IEmpOperationState = {
                     "lName":"gadhvi",
                     "salary":11.67,
                     "grade": "e3",
-                    "isContractor": true
+                    "isContractor": true,
+                    "homeAddress":{} as AddressDataType,
+                    "officeAddress":{} as AddressDataType,
                   }];
             },
             hideEmpForm: (state, action: PayloadAction<boolean>) =>{
@@ -62,7 +64,10 @@ const initialState: IEmpOperationState = {
                         case "contractor":
                             console.log(action.payload.value);
                         state.empFormData.isContractor = "true"===action.payload.value || undefined === action.payload.value;
-                        break;    
+                        break;
+                        case "address":
+                          state.empFormData.homeAddress = JSON.parse(action.payload.value);
+                          break;
                     default:
                         break;
                 }

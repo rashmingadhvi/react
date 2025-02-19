@@ -1,14 +1,17 @@
 
 import axios, { AxiosResponse } from "axios";
 import { IService } from "./IService";
-
+import { Address } from "../comp/interfaces/Address";
+import { AddressDataType } from "../comp/interfaces/AddressDataType";
 export interface IEmployee  {
     empId: number,
     fName: string,
     lName: string,
     salary: number,
     grade: string,
-    isContractor: boolean
+    isContractor: boolean,
+    homeAddress: AddressDataType,
+    officeAddress: AddressDataType
 }
 
 

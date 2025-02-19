@@ -6,6 +6,8 @@ import {
   saveEmp,
   saveEmpFormData,
 } from "../redux/slices/empSlice";
+import { Address } from "../comp/interfaces/Address";
+import { AddressDataType } from "../comp/interfaces/AddressDataType";
 const EmpForm = () => {
   const showForm = useSelector((state: RootState) => !state.empsvc.hideForm);
   const validated = useSelector((state: RootState) => state.empsvc.validForm);
@@ -106,6 +108,16 @@ const EmpForm = () => {
                 <option value="true">True</option>
                 <option value="false">False</option>
               </Form.Select>
+            </Form.Group>
+            <Form.Group>
+              <Form.Label> Home Address</Form.Label>
+              <Address
+                data={{} as AddressDataType}
+                type="Home"
+                onChange={() => {
+                  return;
+                }}
+              />
             </Form.Group>
           </Form>
         </Modal.Body>
