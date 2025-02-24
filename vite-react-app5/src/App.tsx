@@ -3,6 +3,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { inc, dec, CounterStore } from "./redux/counterSlice";
+import MovieComp from "./Movies";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,6 +27,8 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
+
+        <MovieComp />
       </div>
     </>
   );
